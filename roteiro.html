@@ -1477,10 +1477,7 @@ REGRAS DE RESPOSTA:
 - Sempre sugira um próximo passo ao final
 - Responda em português brasileiro`;
 
-    // ⚠️ Troque pela URL do seu Cloudflare Worker após o deploy
-    const WORKER_URL = 'https://SEU_WORKER.SEU_USUARIO.workers.dev';
-
-    const response = await fetch(WORKER_URL, {
+    const response = await fetch('https://api.anthropic.com/v1/messages', {
       method: 'POST',
       headers: { 'Content-Type': 'application/json' },
       body: JSON.stringify({
