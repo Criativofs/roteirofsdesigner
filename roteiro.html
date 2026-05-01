@@ -21,7 +21,7 @@
   --heading: 'Bebas Neue', sans-serif;
   --body: 'DM Sans', sans-serif;
   --mono: 'JetBrains Mono', monospace;
-  --radius: 7px;
+  --radius: 8px;
 }
 * { margin:0; padding:0; box-sizing:border-box; }
 
@@ -1478,7 +1478,7 @@ REGRAS DE RESPOSTA:
 - Responda em português brasileiro`;
 
     // ⚠️ Troque pela URL do seu Cloudflare Worker após o deploy
-    const WORKER_URL = 'https://videoia-proxy.contato-artesfs.workers.dev';
+    const WORKER_URL = 'https://SEU_WORKER.SEU_USUARIO.workers.dev';
 
     const response = await fetch(WORKER_URL, {
       method: 'POST',
